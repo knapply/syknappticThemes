@@ -7,10 +7,8 @@ This package is intended to allow for easy reuse of themes I've made for various
 ### `theme_nuclear()`
 
 ``` r
-ggplot(cars, aes(speed, dist, color = speed)) +
+ggplot(mpg, aes(displ, cty, color = factor(year))) +
   geom_point() +
-  scale_color_continuous(low = "orange", high = "red",
-                         guide = guide_colorbar(barwidth = 20)) +
   theme_nuclear() +
   labs(title = "Much Deterrence.",
        subtitle = "Very Scary. Wow.",
@@ -23,8 +21,7 @@ ggplot(cars, aes(speed, dist, color = speed)) +
 mpg %>%
   filter(manufacturer %in% c("audi", "chevrolet", "dodge", "ford")) %>%
   ggplot(aes(displ, hwy, color = cyl)) +
-  # geom_point(show.legend = FALSE) +
-  geom_jitter(show.legend = T) +
+  geom_jitter(show.legend = TRUE) +
   scale_color_continuous(low = "orange", high = "red") +
   facet_wrap(~ manufacturer, scales = "free") +
   theme_nuclear() +
