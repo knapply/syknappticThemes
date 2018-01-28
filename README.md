@@ -17,7 +17,7 @@ ggplot(cars, aes(speed, dist, color = speed)) +
        caption = "@syknapptic")
 ```
 
-![](README_figs/README-unnamed-chunk-1-1.png)
+<img src="README_figs/README-unnamed-chunk-1-1.png" width="960" />
 
 ``` r
 mpg %>%
@@ -34,4 +34,4 @@ mpg %>%
        caption = "@syknapptic")
 ```
 
-![](README_figs/README-unnamed-chunk-2-1.png)
+<img src="README_figs/README-unnamed-chunk-2-1.png" width="960" />

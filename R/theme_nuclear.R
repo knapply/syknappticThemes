@@ -2,7 +2,7 @@ library(ggplot2)
 library(extrafont)
 
 theme_nuclear <- function(){
-  theme_bw(base_size = 18, base_family = "Stencil") %+replace% 
+  theme_bw(base_size = 20, base_family = "Stencil") %+replace% 
     theme(
       plot.background = element_rect(fill = "#fff112", colour = "black"),
       panel.grid.major = element_blank(),
@@ -13,7 +13,6 @@ theme_nuclear <- function(){
       legend.background = element_rect(fill = "white", colour = "black"),
       legend.key = element_rect(fill = "transparent", colour = NA),
       title = element_text(family = "Liberation Mono", 
-                           size = 10,
                            face = "bold",
                            colour = "black"),
       strip.background = element_rect(fill = "black", colour = "transparent"),

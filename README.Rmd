@@ -3,7 +3,9 @@ output: github_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE, comment = "##", fig.path = "README_figs/README-",
+knitr::opts_chunk$set(collapse = TRUE, comment = "##",
+                      fig.retina = 10,
+                      fig.path = "README_figs/README-",
                       fig.width = 10, fig.height = 7,
                       message = FALSE, warning = FALSE)
 
